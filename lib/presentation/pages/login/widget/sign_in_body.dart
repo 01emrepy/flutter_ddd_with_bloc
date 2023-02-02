@@ -14,12 +14,6 @@ class SignInBody extends StatelessWidget {
       child: ListView(
         padding: const EdgeInsets.all(8),
         children: [
-          const Text(
-            '📝',
-            textAlign: TextAlign.center,
-            style: TextStyle(fontSize: 50),
-          ),
-          const SizedBox(height: 8),
           TextFormField(
             decoration: const InputDecoration(
               prefixIcon: Icon(Icons.email),
