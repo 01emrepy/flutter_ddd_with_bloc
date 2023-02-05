@@ -39,6 +39,8 @@ class FirebaseService implements IAuthService {
     throw UnimplementedError();
   }
 
+  
+
   @override
   Stream<AuthUserModel> get authStateChanges {
     return _firebaseAuth.authStateChanges().map((user) {

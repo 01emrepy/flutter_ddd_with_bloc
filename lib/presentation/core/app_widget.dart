@@ -12,6 +12,7 @@ class AppWidget extends StatelessWidget {
     final appRouter = getIt<AppRouter>();
     return BlocProvider(
         create: (context) => AuthCubit(),
+        lazy: false,
         child: MaterialApp.router(
           title: 'Flutter Demo',
           routerConfig: appRouter.router,
